@@ -1,0 +1,245 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Use a fonte Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: #ffe100; /* Fundo cinza claro */
+    color: #333; /* Cor do texto */
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+header {
+    background-color: #ffe100; /* Fundo branco com leve tom de dourado */
+    color: #333; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para o cabeçalho */
+  
+    width: 100%;
+    z-index: 100;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; 
+}
+
+header h1 { 
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #000000;
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%); /* Gradiente */
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+/*  Aqui está a parte importante: */
+
+#hero-image {
+    text-align: center; 
+    margin-bottom: 20px; 
+    position: relative; 
+    width: 100%; /* Faz o vídeo ocupar toda a largura da tela */
+}
+
+#hero-image h1 { /* Estilo para o título acima da imagem */
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 0%);
+    font-family: 'Arial', sans-serif;
+    position: absolute; 
+    top: -3%;
+    left: 50%;
+    transform: translate(-50%, -100%); /* Ajusta a posição vertical do título */
+    z-index: 1; 
+}
+
+#hero-image iframe {
+    width: 60%; /* Largura do iframe */
+    height: 500px; /* Altura do iframe */
+    border-radius: 5px; /* Borda arredondada para o iframe */
+}
+
+
+footer {
+    background-color: #333; /* Cor do footer */
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 5px 2px 50px rgba(0, 0, 0, 0.5); /* Adiciona a sombra */
+}
+footer p { 
+    font-size: 1.5em; /* Aumenta o tamanho da fonte do rodapé */
+}
+
+.project-gallery {
+    display: flex; /* Exibe os projetos em linha */
+    flex-wrap: wrap; /* Permite que os projetos quebrem a linha */
+    justify-content: center; /* Centraliza os projetos */
+}
+
+.project {
+    width: 300px; /* Define a largura de cada projeto */
+    margin: 10px; /* Adiciona espaço entre os projetos */
+    text-align: center; /* Centraliza o texto dentro do projeto */
+    position: relative; /* Para posicionar o link "Ver Mais" */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    border-radius: 5px; /* Borda arredondada para o projeto */
+    overflow: hidden; /* Oculta o conteúdo que excede a borda do projeto */
+}
+
+.project img {
+    width: 100%; /* A imagem ocupa a largura do projeto */
+    height: auto; /* A altura se ajusta automaticamente */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+    transition: transform 0.3s ease-in-out; /* Adiciona transição para a imagem */
+}
+
+.project:hover img {
+    transform: scale(1.1); /* Amplia a imagem ao passar o mouse */
+}
+
+.project-link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o link */
+    display: inline-block;
+    background-color: #070704;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: #ffe20a; /* Muda a cor do botão ao passar o mouse */
+}
+
+.hidden {
+    display: none; 
+}
+
+.dropdown {
+    display: none; /* O menu está oculto inicialmente */
+    position: fixed; /* Define o posicionamento como fixo */
+    background-color: #fff; /* Cor de fundo do menu */
+    color: #333; /* Cor do texto do menu */
+    padding: 10px;
+    text-align: center;
+    list-style: none; 
+    margin: 0;
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    top: 60px; /* Define o topo do menu */
+    left: 50%; /* Define a posição inicial do menu */
+    transform: translateX(-50%); /* Centraliza o menu horizontalmente */
+    width: 300px; /* Define a largura do menu */
+    z-index: 100; /* Aumenta o z-index para ficar acima do footer */
+}
+
+.dropdown li {
+    margin-bottom: 5px;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333; /* Cor do texto do menu */
+    transition: background-color 0.3s ease-in-out; /* Transição de cor ao passar o mouse */
+}
+
+.dropdown li a:hover {
+    background-color: #f5f5f5; /* Cor de fundo do menu ao passar o mouse */
+}
+
+.dropdown.show {
+    display: block; /* Mostra o menu dropdown quando a classe "show" é adicionada */
+}
+
+.menu-toggle {
+    .menu-toggle {
+        background-color: transparent; /* Remove o background do botão */
+        border: non; /* Remove a borda do botão */
+        padding: 10px; /* Espaçamento interno do botão */
+        cursor: pointer; /* Define o cursor do mouse como um ponteiro */
+      }
+      .menu-toggle span { /* Estiliza o ícone */
+        font-size: 2em; /* Define o tamanho do ícone */
+        color: #000000; /* Define a cor do ícone */
+      }
+      font-size: 1.4em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 10; /* Aumenta o z-index para ficar acima do footer */
+}
+header img {
+    width: 700px; /* Define a largura da imagem */
+    height: auto; /* Ajuste a altura automaticamente para manter a proporção */
+    margin: 0 auto; /* Centraliza a imagem */
+    margin-left: 50px; /* Adiciona margem à esquerda */
+}
+h2, h3, h4 {
+    font-family: 'Roboto', sans-serif; /* Use uma fonte semelhante ao template */
+    font-weight: 700; /* Define o peso da fonte */
+    color: #333; /* Define a cor do título */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+  }
+  
+ 
+  button:hover { /* Efeito ao passar o mouse */
+    background-color: #ffe70a; /* Muda a cor do botão ao passar o mouse */
+  }
+  #reflexoes {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #000000;
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%); 
+}
+
+.video-gallery {
+    display: flex; /* Usa flexbox para organizar os vídeos */
+    flex-wrap: wrap; /* Permite que os vídeos quebrem a linha se necessário */
+    justify-content: center; /* Centraliza os vídeos na linha */
+    gap: 10px; /* Espaço entre os vídeos */
+}
+
+.video-gallery iframe {
+    width: 32%; /* Define a largura de cada vídeo (aproximadamente metade da largura da tela) */
+    height: 252px; /* Define a altura dos vídeos */
+    border-radius: 5px;
+}
