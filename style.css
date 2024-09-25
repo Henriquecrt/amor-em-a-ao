@@ -243,3 +243,29 @@ h2, h3, h4 {
     height: 252px; /* Define a altura dos vídeos */
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+    /* Estilos para o layout do site */
+    #hero-image { 
+        width: 100%;
+    }
+
+    #hero-image iframe {
+        width: 100%; 
+    }
+
+    .project-gallery {
+        flex-direction: column; /* Exibe os projetos em coluna */
+    }
+
+    .project {
+        width: 100%; /* Ajuste a largura dos projetos para ocupar a tela inteira */
+    }
+
+    .video-gallery {
+        flex-direction: column; /* Exibe os vídeos em coluna */
+    }
+
+    .video-gallery iframe {
+        width: 100%; /* Ajuste a largura dos vídeos para ocupar a tela inteira */
+    }
+}
