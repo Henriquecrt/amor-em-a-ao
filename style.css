@@ -244,28 +244,40 @@ h2, h3, h4 {
     border-radius: 5px;
 }
 @media (max-width: 768px) {
-    /* Estilos para o layout do site */
+    /* Estilos para telas menores que 768 pixels (telas de celular) */
     #hero-image { 
-        width: 100%;
-    }
-
-    #hero-image iframe {
+        /* Ajuste o layout do banner do herói */
         width: 100%; 
     }
 
-    .project-gallery {
+    #hero-image h1 { 
+        /* Ajuste o tamanho da fonte do título */
+        font-size: 1.8em;
+    }
+
+    #hero-image iframe { 
+        /* Ajuste o tamanho do iframe do vídeo */
+        width: 100%; 
+        height: 250px; 
+    }
+
+    .project-gallery { 
+        /* Ajuste o layout da galeria de projetos */
         flex-direction: column; /* Exibe os projetos em coluna */
+        gap: 10px;
     }
 
     .project {
-        width: 100%; /* Ajuste a largura dos projetos para ocupar a tela inteira */
+        width: 100%;  /* Ajuste a largura dos projetos para ocupar a tela inteira */
     }
 
-    .video-gallery {
+    .video-gallery { 
+        /* Ajuste o layout da galeria de vídeos */
         flex-direction: column; /* Exibe os vídeos em coluna */
+        gap: 10px;
     }
 
     .video-gallery iframe {
-        width: 100%; /* Ajuste a largura dos vídeos para ocupar a tela inteira */
+        width: 100%; 
+        height: 200px; 
     }
-}
