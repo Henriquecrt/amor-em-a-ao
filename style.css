@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif; /* Use a fonte Roboto */
     margin: 0;
     padding: 0;
-    background-color: #ffe100; /* Fundo cinza claro */
+    background-color: #fff; /* Fundo cinza claro */
     color: #333; /* Cor do texto */
     overflow-x: hidden; /* Remove a barra de rolagem horizontal */
 }
@@ -34,6 +34,8 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content:space-around;
 }
 
 nav li {
@@ -44,6 +46,11 @@ nav li {
 nav a {
     color: #333;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+nav a:hover {
+    color: #0078D7; /* Cor ao passar o mouse */
 }
 
 main {
@@ -148,82 +155,15 @@ footer p {
 .project-link:hover {
     background-color: #ffe20a; /* Muda a cor do botão ao passar o mouse */
 }
+.project iframe {
+    width: 100%; 
+    height: 170px; 
+    border-radius: 5px;
+}
 
 .hidden {
     display: none; 
 }
-
-.dropdown {
-    display: none; /* O menu está oculto inicialmente */
-    position: fixed; /* Define o posicionamento como fixo */
-    background-color: #fff; /* Cor de fundo do menu */
-    color: #333; /* Cor do texto do menu */
-    padding: 10px;
-    text-align: center;
-    list-style: none; 
-    margin: 0;
-    border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
-    top: 60px; /* Define o topo do menu */
-    left: 50%; /* Define a posição inicial do menu */
-    transform: translateX(-50%); /* Centraliza o menu horizontalmente */
-    width: 300px; /* Define a largura do menu */
-    z-index: 100; /* Aumenta o z-index para ficar acima do footer */
-}
-
-.dropdown li {
-    margin-bottom: 5px;
-}
-
-.dropdown li a {
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #333; /* Cor do texto do menu */
-    transition: background-color 0.3s ease-in-out; /* Transição de cor ao passar o mouse */
-}
-
-.dropdown li a:hover {
-    background-color: #f5f5f5; /* Cor de fundo do menu ao passar o mouse */
-}
-
-.dropdown.show {
-    display: block; /* Mostra o menu dropdown quando a classe "show" é adicionada */
-}
-
-.menu-toggle {
-    .menu-toggle {
-        background-color: transparent; /* Remove o background do botão */
-        border: non; /* Remove a borda do botão */
-        padding: 10px; /* Espaçamento interno do botão */
-        cursor: pointer; /* Define o cursor do mouse como um ponteiro */
-      }
-      .menu-toggle span { /* Estiliza o ícone */
-        font-size: 2em; /* Define o tamanho do ícone */
-        color: #000000; /* Define a cor do ícone */
-      }
-      font-size: 1.4em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    z-index: 10; /* Aumenta o z-index para ficar acima do footer */
-}
-header img {
-    width: 700px; /* Define a largura da imagem */
-    height: auto; /* Ajuste a altura automaticamente para manter a proporção */
-    margin: 0 auto; /* Centraliza a imagem */
-    margin-left: 50px; /* Adiciona margem à esquerda */
-}
-h2, h3, h4 {
-    font-family: 'Roboto', sans-serif; /* Use uma fonte semelhante ao template */
-    font-weight: 700; /* Define o peso da fonte */
-    color: #333; /* Define a cor do título */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
-  }
-  
- 
-  button:hover { /* Efeito ao passar o mouse */
-    background-color: #ffe70a; /* Muda a cor do botão ao passar o mouse */
-  }
   #reflexoes {
     padding: 20px;
     margin-bottom: 20px;
@@ -243,41 +183,3 @@ h2, h3, h4 {
     height: 252px; /* Define a altura dos vídeos */
     border-radius: 5px;
 }
-@media (max-width: 768px) {
-    /* Estilos para telas menores que 768 pixels (telas de celular) */
-    #hero-image { 
-        /* Ajuste o layout do banner do herói */
-        width: 100%; 
-    }
-
-    #hero-image h1 { 
-        /* Ajuste o tamanho da fonte do título */
-        font-size: 2.8em;
-    }
-
-    #hero-image iframe { 
-        /* Ajuste o tamanho do iframe do vídeo */
-        width: 100%; 
-        height: 240px; 
-    }
-
-    .project-gallery { 
-        /* Ajuste o layout da galeria de projetos */
-        flex-direction: column; /* Exibe os projetos em coluna */
-        gap: 10px;
-    }
-
-    .project {
-        width: 100%;  /* Ajuste a largura dos projetos para ocupar a tela inteira */
-    }
-
-    .video-gallery { 
-        /* Ajuste o layout da galeria de vídeos */
-        flex-direction: column; /* Exibe os vídeos em coluna */
-        gap: 10px;
-    }
-
-    .video-gallery iframe {
-        width: 100%; 
-        height: 200px; 
-    }
