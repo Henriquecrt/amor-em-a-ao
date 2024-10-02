@@ -8,38 +8,40 @@ body {
 }
 
 header {
-    background-color: #ffe100; /* Fundo branco com leve tom de dourado */
-    color: #333; 
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para o cabeçalho */
-  
-    width: 100%;
+    background-color: #ffe100;
+    color: #333;
+    padding: 20px 0; /* Ajuste a altura do cabeçalho conforme necessário */
+    position: relative; /* Para posicionar o menu responsivo */
     z-index: 100;
 }
-
-h1 {
-    margin: 0;
-    font-size: 2.5em; 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Ajuste a largura máxima da área de conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-header h1 { 
-    font-size: 3em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+.logo {
+    /* Estilos para a logo */
+    width: 350px; /* Define a largura da logo */
 }
 
+.logo img {
+    /* Estilos para a imagem da logo */
+    width: 70%; /* Faz a imagem ocupar toda a largura da logo */
+    height: auto; /* Mantém a proporção da imagem */
+}
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
     display: flex;
-    justify-content:space-around;
+    justify-content:center
 }
 
 nav li {
-    display: inline-block;
     margin: 0 10px;
 }
 
@@ -76,19 +78,6 @@ section h2 {
     margin-bottom: 20px; 
     position: relative; 
     width: 100%; /* Faz o vídeo ocupar toda a largura da tela */
-}
-
-#hero-image h1 { /* Estilo para o título acima da imagem */
-    text-align: center;
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    color: hsl(0, 0%, 0%);
-    font-family: 'Arial', sans-serif;
-    position: absolute; 
-    top: -3%;
-    left: 50%;
-    transform: translate(-50%, -100%); /* Ajusta a posição vertical do título */
-    z-index: 1; 
 }
 
 #hero-image iframe {
@@ -182,4 +171,49 @@ footer p {
     width: 32%; /* Define a largura de cada vídeo (aproximadamente metade da largura da tela) */
     height: 252px; /* Define a altura dos vídeos */
     border-radius: 5px;
+}
+#imagem-abaixo-cabeçalho {
+    text-align: center; /* Centraliza a imagem */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+#imagem-abaixo-cabeçalho img {
+    max-width: 90%; /* Faz a imagem ocupar no máximo a largura da seção */
+    height: auto;
+}
+
+/* Estilos para telas menores (Responsividade) */
+@media (max-width: 768px) { /* Ajuste o ponto de quebra conforme necessário */
+    nav ul {
+        display: none; /* Esconde o menu principal */
+    }
+
+    /* Botão do menu responsivo */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px; /* Ajuste a posição do botão */
+        right: 15px; /* Ajuste a posição do botão */
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Menu responsivo */
+    nav ul.show {
+        display: block; /* Mostra o menu quando estiver ativo */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #dbeff0;
+        padding: 10px;
+        text-align: center;
+        z-index: 10; /* Ajuste para o menu ficar acima do cabeçalho */
+    }
+
+    nav ul.show li {
+        margin-bottom: 10px; /* Ajuste o espaçamento entre os itens do menu */
+    }
 }
