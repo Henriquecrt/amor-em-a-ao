@@ -2,8 +2,8 @@ body {
     font-family: 'Roboto', sans-serif; /* Use a fonte Roboto */
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Fundo cinza claro */
-    color: #333; /* Cor do texto */
+    background: linear-gradient(to bottom, #131310 0%, #000000 100%); /* Gradiente */
+    color: #ffffff; /* Cor do texto */
     overflow-x: hidden; /* Remove a barra de rolagem horizontal */
 }
 
@@ -60,15 +60,22 @@ main {
 }
 
 section {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px #000000;
-    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%); /* Gradiente */
-}
+    background-color: transparent; /* Remove o fundo da seção */
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
 section h2 {
     margin-top: 0;
     font-size: 2em;
+    text-align: center; /* faz que o titulos das seçoes fiquem no centro */
+}
+
+section p {
+    text-align: center; /* faz que os paragrafos de todas as seçoes fiquem no centro */
 }
 
 /*  Aqui está a parte importante: */
@@ -88,8 +95,8 @@ section h2 {
 
 
 footer {
-    background-color: #333; /* Cor do footer */
-    color: #fff;
+    background-color: #ffff00b8; /* Cor do footer */
+    color: #ffffff;
     padding: 1px;
     text-align: center;
     bottom: 0;
@@ -157,7 +164,6 @@ footer p {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px #000000;
-    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%); 
 }
 
 .video-gallery {
@@ -181,6 +187,20 @@ footer p {
     max-width: 90%; /* Faz a imagem ocupar no máximo a largura da seção */
     height: auto;
 }
+
+#sobre-nos {
+    /* Outros estilos da seção */
+    width: 50%; /* Define a largura da seção */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+  #sobre-nos h2 {
+    text-align: center; /* centraliza o titulo sobre nos */
+  } 
+  #sobre-nos p {
+    text-align: center; /* centraliza o paragrafo */
+  } 
+
 
 /* Estilos para telas menores (Responsividade) */
 @media (max-width: 768px) { /* Ajuste o ponto de quebra conforme necessário */
