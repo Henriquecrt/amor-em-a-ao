@@ -1,44 +1,57 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Use a fonte Roboto */
+    font-family: 'Roboto', sans-serif;
+    /* Use a fonte Roboto */
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #131310 0%, #000000 100%); /* Gradiente */
-    color: #ffffff; /* Cor do texto */
-    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    background: linear-gradient(to bottom, #131310 0%, #000000 100%);
+    /* Gradiente */
+    color: #ffffff;
+    /* Cor do texto */
+    overflow-x: hidden;
+    /* Remove a barra de rolagem horizontal */
 }
 
 header {
     background-color: #ffe100;
     color: #333;
-    padding: 20px 0; /* Ajuste a altura do cabeçalho conforme necessário */
-    position: relative; /* Para posicionar o menu responsivo */
+    padding: 20px 0;
+    /* Ajuste a altura do cabeçalho conforme necessário */
+    position: relative;
+    /* Para posicionar o menu responsivo */
     z-index: 100;
 }
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Ajuste a largura máxima da área de conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 1200px;
+    /* Ajuste a largura máxima da área de conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
 }
 
 .logo {
     /* Estilos para a logo */
-    width: 350px; /* Define a largura da logo */
+    width: 350px;
+    /* Define a largura da logo */
 }
 
 .logo img {
     /* Estilos para a imagem da logo */
-    width: 70%; /* Faz a imagem ocupar toda a largura da logo */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 70%;
+    /* Faz a imagem ocupar toda a largura da logo */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
     display: flex;
-    justify-content:center
+    justify-content: center
 }
 
 nav li {
@@ -51,94 +64,124 @@ nav a {
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
+
 nav a:hover {
-    color: #0078D7; /* Cor ao passar o mouse */
+    color: #0078D7;
+    /* Cor ao passar o mouse */
 }
 
 main {
-    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    padding-top: 80px;
+    /* Espaço para o cabeçalho fixo */
 }
 
 section {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: transparent; /* Remove o fundo da seção */
+    background-color: transparent;
+    /* Remove o fundo da seção */
     text-align: center;
     margin-bottom: 30px;
-  }
+}
 
 section h2 {
     margin-top: 0;
     font-size: 2em;
-    text-align: center; /* faz que o titulos das seçoes fiquem no centro */
+    text-align: center;
+    /* faz que o titulos das seçoes fiquem no centro */
 }
 
 section p {
-    text-align: center; /* faz que os paragrafos de todas as seçoes fiquem no centro */
+    text-align: center;
+    /* faz que os paragrafos de todas as seçoes fiquem no centro */
 }
 
 /*  Aqui está a parte importante: */
 
 #hero-image {
-    text-align: center; 
-    margin-bottom: 20px; 
-    position: relative; 
-    width: 100%; /* Faz o vídeo ocupar toda a largura da tela */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    /* Faz o vídeo ocupar toda a largura da tela */
 }
 
 #hero-image iframe {
-    width: 60%; /* Largura do iframe */
-    height: 500px; /* Altura do iframe */
-    border-radius: 5px; /* Borda arredondada para o iframe */
+    width: 60%;
+    /* Largura do iframe */
+    height: 500px;
+    /* Altura do iframe */
+    border-radius: 5px;
+    /* Borda arredondada para o iframe */
 }
 
 
 footer {
-    background-color: #ffff00b8; /* Cor do footer */
+    background-color: #ffff00b8;
+    /* Cor do footer */
     color: #ffffff;
     padding: 1px;
     text-align: center;
     bottom: 0;
     width: 100%;
-    box-shadow: 5px 2px 50px rgba(0, 0, 0, 0.5); /* Adiciona a sombra */
+    box-shadow: 5px 2px 50px rgba(0, 0, 0, 0.5);
+    /* Adiciona a sombra */
 }
-footer p { 
-    font-size: 1.5em; /* Aumenta o tamanho da fonte do rodapé */
+
+footer p {
+    font-size: 1.5em;
+    /* Aumenta o tamanho da fonte do rodapé */
 }
 
 .project-gallery {
-    display: flex; /* Exibe os projetos em linha */
-    flex-wrap: wrap; /* Permite que os projetos quebrem a linha */
-    justify-content: center; /* Centraliza os projetos */
+    display: flex;
+    /* Exibe os projetos em linha */
+    flex-wrap: wrap;
+    /* Permite que os projetos quebrem a linha */
+    justify-content: center;
+    /* Centraliza os projetos */
 }
 
 .project {
-    width: 300px; /* Define a largura de cada projeto */
-    margin: 10px; /* Adiciona espaço entre os projetos */
-    text-align: center; /* Centraliza o texto dentro do projeto */
-    position: relative; /* Para posicionar o link "Ver Mais" */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
-    border-radius: 5px; /* Borda arredondada para o projeto */
-    overflow: hidden; /* Oculta o conteúdo que excede a borda do projeto */
+    width: 300px;
+    /* Define a largura de cada projeto */
+    margin: 10px;
+    /* Adiciona espaço entre os projetos */
+    text-align: center;
+    /* Centraliza o texto dentro do projeto */
+    position: relative;
+    /* Para posicionar o link "Ver Mais" */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra */
+    border-radius: 5px;
+    /* Borda arredondada para o projeto */
+    overflow: hidden;
+    /* Oculta o conteúdo que excede a borda do projeto */
 }
 
 .project img {
-    width: 100%; /* A imagem ocupa a largura do projeto */
-    height: auto; /* A altura se ajusta automaticamente */
-    margin-bottom: 10px; /* Espaço abaixo da imagem */
-    transition: transform 0.3s ease-in-out; /* Adiciona transição para a imagem */
+    width: 100%;
+    /* A imagem ocupa a largura do projeto */
+    height: auto;
+    /* A altura se ajusta automaticamente */
+    margin-bottom: 10px;
+    /* Espaço abaixo da imagem */
+    transition: transform 0.3s ease-in-out;
+    /* Adiciona transição para a imagem */
 }
 
 .project:hover img {
-    transform: scale(1.1); /* Amplia a imagem ao passar o mouse */
+    transform: scale(1.1);
+    /* Amplia a imagem ao passar o mouse */
 }
 
 .project-link {
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translateX(-50%); /* Centraliza o link */
+    transform: translateX(-50%);
+    /* Centraliza o link */
     display: inline-block;
     background-color: #070704;
     color: #fff;
@@ -149,71 +192,94 @@ footer p {
 }
 
 .project-link:hover {
-    background-color: #ffe20a; /* Muda a cor do botão ao passar o mouse */
+    background-color: #ffe20a;
+    /* Muda a cor do botão ao passar o mouse */
 }
+
 .project iframe {
-    width: 100%; 
-    height: 200px; 
+    width: 100%;
+    height: 200px;
     border-radius: 5px;
 }
 
 .hidden {
-    display: none; 
+    display: none;
 }
-  #reflexoes {
+
+#reflexoes {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px #000000;
 }
 
 .video-gallery {
-    display: flex; /* Usa flexbox para organizar os vídeos */
-    flex-wrap: wrap; /* Permite que os vídeos quebrem a linha se necessário */
-    justify-content: center; /* Centraliza os vídeos na linha */
-    gap: 10px; /* Espaço entre os vídeos */
+    display: flex;
+    /* Usa flexbox para organizar os vídeos */
+    flex-wrap: wrap;
+    /* Permite que os vídeos quebrem a linha se necessário */
+    justify-content: center;
+    /* Centraliza os vídeos na linha */
+    gap: 10px;
+    /* Espaço entre os vídeos */
 }
 
 .video-gallery iframe {
-    width: 32%; /* Define a largura de cada vídeo (aproximadamente metade da largura da tela) */
-    height: 252px; /* Define a altura dos vídeos */
+    width: 32%;
+    /* Define a largura de cada vídeo (aproximadamente metade da largura da tela) */
+    height: 252px;
+    /* Define a altura dos vídeos */
     border-radius: 5px;
 }
+
 #imagem-abaixo-cabeçalho {
-    text-align: center; /* Centraliza a imagem */
-    margin-bottom: 20px; /* Adiciona margem inferior */
+    text-align: center;
+    /* Centraliza a imagem */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
 }
 
 #imagem-abaixo-cabeçalho img {
-    max-width: 90%; /* Faz a imagem ocupar no máximo a largura da seção */
+    max-width: 90%;
+    /* Faz a imagem ocupar no máximo a largura da seção */
     height: auto;
 }
 
 #sobre-nos {
     /* Outros estilos da seção */
-    width: 50%; /* Define a largura da seção */
-    margin: 0 auto; /* Centraliza horizontalmente */
-  }
+    width: 50%;
+    /* Define a largura da seção */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
 
-  #sobre-nos h2 {
-    text-align: center; /* centraliza o titulo sobre nos */
-  } 
-  #sobre-nos p {
-    text-align: center; /* centraliza o paragrafo */
-  } 
+#sobre-nos h2 {
+    text-align: center;
+    /* centraliza o titulo sobre nos */
+}
+
+#sobre-nos p {
+    text-align: center;
+    /* centraliza o paragrafo */
+}
 
 
 /* Estilos para telas menores (Responsividade) */
-@media (max-width: 1020px) { /* Ajuste o ponto de quebra conforme necessário */
+@media (max-width: 1020px) {
+
+    /* Ajuste o ponto de quebra conforme necessário */
     nav ul {
-        display: none; /* Esconde o menu principal */
+        display: none;
+        /* Esconde o menu principal */
     }
 
     /* Botão do menu responsivo */
     .menu-toggle {
         display: block;
         position: absolute;
-        top: 15px; /* Ajuste a posição do botão */
-        right: 15px; /* Ajuste a posição do botão */
+        top: 15px;
+        /* Ajuste a posição do botão */
+        right: 15px;
+        /* Ajuste a posição do botão */
         background-color: transparent;
         border: none;
         font-size: 24px;
@@ -222,7 +288,8 @@ footer p {
 
     /* Menu responsivo */
     nav ul.show {
-        display: block; /* Mostra o menu quando estiver ativo */
+        display: block;
+        /* Mostra o menu quando estiver ativo */
         position: absolute;
         top: 100%;
         left: 0;
@@ -230,22 +297,26 @@ footer p {
         background-color: #dbeff0;
         padding: 10px;
         text-align: center;
-        z-index: 10; /* Ajuste para o menu ficar acima do cabeçalho */
+        z-index: 10;
+        /* Ajuste para o menu ficar acima do cabeçalho */
     }
 
     nav ul.show li {
-        margin-bottom: 10px; /* Ajuste o espaçamento entre os itens do menu */
+        margin-bottom: 10px;
+        /* Ajuste o espaçamento entre os itens do menu */
     }
-}
-/*largura do video do topo*/
-#hero-image iframe {
-    width: 90%; /* Largura do iframe */
-    height: 200px; /* Altura do iframe */
-    border-radius: 45px; /* Borda arredondada para o iframe */
-}
-#hero-image {
-    text-align: center; 
-    margin-bottom: 20px; 
-    position: relative;
-    width: 90%; /* Faz o vídeo ocupar toda a largura da tela */
+
+    /*largura do video do topo*/
+    #hero-image iframe {
+        width: 90%;
+        /* Largura do iframe */
+        height: 200px;
+        /* Altura do iframe */
+    }
+
+    #hero-image {
+        margin-bottom: 20px;
+        width: 90%;
+        /* Faz o vídeo ocupar toda a largura da tela */
+    }
 }
