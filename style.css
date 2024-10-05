@@ -271,6 +271,32 @@ footer p {
     /* centraliza o paragrafo */
 }
 
+/* Estilos para o ícone do menu */
+.menu-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 5px; /* Opcional: Arredonda os cantos do ícone */
+    position: relative;
+  }
+  
+  .menu-icon::before,
+  .menu-icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #333; 
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .menu-icon::after {
+    top: calc(50% + 6px); /* Ajusta a posição vertical da barra do meio */
+  }
 
 /* Estilos para telas menores (Responsividade) */
 @media (max-width: 1020px) {
@@ -286,7 +312,7 @@ footer p {
     .menu-toggle {
         display: block;
         position: absolute;
-        top: 30px;
+        top: 35px;
         /* Ajuste a posição do botão */
         right: 15px;
         /* Ajuste a posição do botão */
@@ -296,7 +322,10 @@ footer p {
         cursor: pointer;
     }
 
-    
+    .menu-icon {
+        background-color: #f0111100;
+        border-radius: 1px; /* Opcional: Arredonda os cantos do ícone */
+      }
 
     /* Menu responsivo */
     nav ul.show {
