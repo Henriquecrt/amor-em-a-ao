@@ -178,7 +178,7 @@ footer p {
 
 .project-link {
     position: absolute;
-    bottom: 10px;
+    bottom: 1px;
     left: 50%;
     transform: translateX(-50%);
     /* Centraliza o link */
@@ -198,7 +198,7 @@ footer p {
 
 .project iframe {
     width: 100%;
-    height: 200px;
+    height: 170px;
     border-radius: 5px;
 }
 
